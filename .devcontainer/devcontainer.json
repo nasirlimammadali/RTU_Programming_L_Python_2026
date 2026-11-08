@@ -1,11 +1,7 @@
+
 {
   "name": "Python Course Codespace",
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.13"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -15,15 +11,11 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python3.13",
+        "python.defaultInterpreterPath": "/usr/local/bin/python3",
         "python.languageServer": "Pylance",
-        "python.formatting.provider": "black",
-        "python.linting.enabled": true,
-        "python.linting.pylintEnabled": true,
         "python.analysis.typeCheckingMode": "basic"
       }
     }
   },
-  "postCreateCommand": "pip install --upgrade pip && pip install black pylint",
   "remoteUser": "vscode"
 }
